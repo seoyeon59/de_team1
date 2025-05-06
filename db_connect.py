@@ -2,7 +2,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-csv_filename = "C:/Users/seoyeon/PycharmProjects/data_engenius/weather_data/7_weather.csv"
+csv_filename = "7_weather.csv"
 
 df = pd.read_csv(csv_filename)
 
@@ -18,9 +18,9 @@ df = df.dropna(subset=['날짜'])  # 날짜 파싱 실패한 행 제거
 
 # 🔐 여기에 너의 MariaDB 접속 정보 입력
 user = 'root'
-password = "bear0205%21%40%21%40"
-host = '127.0.0.1'      # 또는 IP
-port = 3306           # 보통 3306
+password = "비밀번호 입력"
+host = 'IP'   
+port = 3306
 db_name = 'de_1_weather' # HeidiSQL에서 미리 만든 DB 이름
 
 # SQLAlchemy 엔진 생성 (MariaDB도 mysql로 접속함!)
