@@ -5,16 +5,16 @@ from matplotlib import font_manager, rc
 from matplotlib.dates import DateFormatter
 from sqlalchemy import create_engine
 
-# ✅ 한글 폰트 설정 (Windows: 맑은 고딕)
+# 한글 폰트 설정 (Windows: 맑은 고딕)
 font_path = "C:/Windows/Fonts/malgun.ttf"
 font = font_manager.FontProperties(fname=font_path).get_name()
 rc('font', family=font)
 plt.rcParams['axes.unicode_minus'] = False  # 마이너스 깨짐 방지
 
-# ✅ DB 접속 정보
+# DB 접속 정보
 user = 'root'
-password = "bear0205%21%40%21%40"
-host = '127.0.0.1'
+password = "비밀번호 입력"
+host = 'IP 주소'
 port = 3306
 db_name = 'de_1_weather'
 db_url = f'mysql+pymysql://{user}:{password}@{host}:{port}/{db_name}'
