@@ -6,7 +6,7 @@ import re
 from selenium.webdriver.common.by import By
 
 # 저장할 csv 파일 이름
-csv_filename = "C:/Users/seoyeon/PycharmProjects/data_engenius/weather_data/7_weather.csv"
+csv_filename = "7_weather.csv"
 
 # 브라우저 한 번만 열기
 browser = webdriver.Chrome()
